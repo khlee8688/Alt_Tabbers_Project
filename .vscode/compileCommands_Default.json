@@ -1,0 +1,90 @@
+[
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Alt_Tabbers_Project.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Alt_Tabbers_Project.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Alt_Tabbers_Project.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Alt_Tabbers_ProjectCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Alt_Tabbers_ProjectCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Alt_Tabbers_ProjectGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Alt_Tabbers_ProjectGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Character\\PlayerAnimInstance.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Character\\PlayerAnimInstance.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Character\\PlayerCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\Source\\Alt_Tabbers_Project\\Character\\PlayerCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\KH\\Documents\\Unreal Projects\\Alt_Tabbers_Project\\.vscode\\compileCommands_Default\\Alt_Tabbers_Project.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Source"
+	}
+]
