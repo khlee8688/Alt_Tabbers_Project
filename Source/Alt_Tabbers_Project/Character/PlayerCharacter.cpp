@@ -58,6 +58,9 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Look);
+
+		//Crouching
+		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Started, this, &APlayerCharacter::Crouch);
 	}
 }
 
@@ -95,4 +98,20 @@ void APlayerCharacter::Look(const FInputActionValue& Value)
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
+}
+
+void APlayerCharacter::Crouch(const FInputActionValue &Value)
+{
+	if(isCrouching) StopCrouch();
+	else StartCrouch();
+}
+
+void APlayerCharacter::StartCrouch()
+{
+	isCrouching = true;
+}
+
+void APlayerCharacter::StopCrouch()
+{
+	isCrouching = false;
 }

@@ -27,6 +27,9 @@ class ALT_TABBERS_PROJECT_API APlayerCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* LookAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* CrouchAction;
+
 public:
 	APlayerCharacter();
 	virtual void Tick(float DeltaTime) override;
@@ -37,10 +40,15 @@ protected:
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
+	void Crouch(const FInputActionValue& Value);
+
+	void StartCrouch();
+	void StopCrouch();
 
 private:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 	class UCameraComponent* Camera;
 public:	
-	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
+	bool isCrouching;
 };
