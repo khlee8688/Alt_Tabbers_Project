@@ -72,3 +72,20 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# VSCode settings
+.vscode/
+
+# Unreal Engine specific files
+crashdumps/
+
+# C++ project specific files
+*.clangd
+
+# Unreal Engine specific build configurations
+*.vsconfig
+
+# Unreal Engine project files (user-specific)
+*.user
+*.userosscache
+*.sln.docstates
