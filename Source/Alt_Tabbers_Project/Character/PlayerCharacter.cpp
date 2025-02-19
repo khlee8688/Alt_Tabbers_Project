@@ -58,6 +58,13 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Look);
+
+		//Crouching
+		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Started, this, &APlayerCharacter::CrouchToggle);
+
+		//Running
+		EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Started, this, &APlayerCharacter::StartRun);
+		EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Completed, this, &APlayerCharacter::StopRun);
 	}
 }
 
@@ -94,5 +101,33 @@ void APlayerCharacter::Look(const FInputActionValue& Value)
 		// Add yaw and pitch input to controller
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
+	}
+}
+
+void APlayerCharacter::CrouchToggle()
+{
+	if (bIsCrouched)
+    {
+        UnCrouch();
+    }
+    else
+    {
+        Crouch();
+    }
+}
+
+void APlayerCharacter::StartRun()
+{
+	if (!bIsCrouched)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+	}
+}
+
+void APlayerCharacter::StopRun()
+{
+	if (!bIsCrouched)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
 	}
 }
