@@ -61,6 +61,10 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 		//Crouching
 		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Started, this, &APlayerCharacter::CrouchToggle);
+
+		//Running
+		EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Started, this, &APlayerCharacter::StartRun);
+		EnhancedInputComponent->BindAction(RunAction, ETriggerEvent::Completed, this, &APlayerCharacter::StopRun);
 	}
 }
 
@@ -110,4 +114,20 @@ void APlayerCharacter::CrouchToggle()
     {
         Crouch();
     }
+}
+
+void APlayerCharacter::StartRun()
+{
+	if (!bIsCrouched)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = RunSpeed;
+	}
+}
+
+void APlayerCharacter::StopRun()
+{
+	if (!bIsCrouched)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = WalkSpeed;
+	}
 }
