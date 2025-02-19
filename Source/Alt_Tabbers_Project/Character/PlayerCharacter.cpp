@@ -60,7 +60,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Look);
 
 		//Crouching
-		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Started, this, &APlayerCharacter::Crouch);
+		EnhancedInputComponent->BindAction(CrouchAction, ETriggerEvent::Started, this, &APlayerCharacter::CrouchToggle);
 	}
 }
 
@@ -100,18 +100,14 @@ void APlayerCharacter::Look(const FInputActionValue& Value)
 	}
 }
 
-void APlayerCharacter::Crouch(const FInputActionValue &Value)
+void APlayerCharacter::CrouchToggle()
 {
-	if(isCrouching) StopCrouch();
-	else StartCrouch();
-}
-
-void APlayerCharacter::StartCrouch()
-{
-	isCrouching = true;
-}
-
-void APlayerCharacter::StopCrouch()
-{
-	isCrouching = false;
+	if (bIsCrouched)
+    {
+        UnCrouch();
+    }
+    else
+    {
+        Crouch();
+    }
 }

@@ -29,4 +29,7 @@ private:
 
 	UPROPERTY(BlueprintReadOnly, Category = Chratacter, meta = (AllowPrivateAccess = "true"))
 	bool bIsAccelerating;
+
+	UPROPERTY(BlueprintReadOnly, Category = Chratacter, meta = (AllowPrivateAccess = "true"))
+	bool bIsCrouching;
 };

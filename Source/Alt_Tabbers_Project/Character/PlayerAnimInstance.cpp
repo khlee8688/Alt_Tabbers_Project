@@ -28,4 +28,5 @@ void UPlayerAnimInstance::NativeUpdateAnimation(float DeltaTime)
 
     bIsInAir = PlayerCharacter->GetCharacterMovement()->IsFalling();
     bIsAccelerating = PlayerCharacter->GetCharacterMovement()->GetCurrentAcceleration().Size() > 0.f ? true : false;
+    bIsCrouching = PlayerCharacter->GetCharacterMovement()->IsCrouching();
 }

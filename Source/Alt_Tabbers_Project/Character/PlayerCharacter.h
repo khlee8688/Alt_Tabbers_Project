@@ -40,15 +40,11 @@ protected:
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
-	void Crouch(const FInputActionValue& Value);
-
-	void StartCrouch();
-	void StopCrouch();
+	void CrouchToggle();
 
 private:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 	class UCameraComponent* Camera;
 public:	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = GamePlay)
-	bool isCrouching;
+
 };
