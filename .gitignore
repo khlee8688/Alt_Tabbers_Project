@@ -79,9 +79,6 @@ DerivedDataCache/*
 # Unreal Engine specific files
 crashdumps/
 
-# C++ project specific files
-*.clangd
-
 # Unreal Engine specific build configurations
 *.vsconfig
 
